@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Circlehub - HTML Templates</title>
 
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="public/landing-page/assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/landing-page/assets/css/style.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="container">
                 <nav class="navbar w-100 navbar-expand-lg justify-content-betweenm">
                     <a href="index.html" class="navbar-brand">
-                        <img src="assets/images/logo.png" class="logo" alt="logo">
+                        <img src="public/landing-page/assets/images/logo.png" class="logo" alt="logo">
                     </a>
                     <button class="button search-active d-block d-md-none">
                         <i class="d-center material-symbols-outlined fs-xxl mat-icon"> search </i>
@@ -73,7 +73,7 @@
                                 <div class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-7.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-7.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <div class="title-area position-relative d-inline-flex align-items-center">
@@ -87,7 +87,7 @@
                                 <div  class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Annette Black</h6>
@@ -98,7 +98,7 @@
                                 <div  class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-2.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-2.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Ralph Edwards</h6>
@@ -109,7 +109,7 @@
                                 <div  class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Darrell Steward</h6>
@@ -120,7 +120,7 @@
                                 <div  class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Wade Warren</h6>
@@ -131,7 +131,7 @@
                                 <div  class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-5.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-5.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -142,7 +142,7 @@
                                 <div class="single-box p-0 mb-7">
                                     <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                                         <div class="avatar">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-6.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-6.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Jacob Jones</h6>
@@ -168,8 +168,8 @@
                                     <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                                         <div class="left-item position-relative d-inline-flex gap-3">
                                             <div class="avatar position-relative d-inline-flex">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
-                                                <img class="abs-item position-absolute max-un" src="assets/images/icon/speech-bubble.png" alt="icon">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
+                                                <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/speech-bubble.png" alt="icon">
                                             </div>
                                             <div class="text-area">
                                                 <h6 class="m-0 mb-1">Piter Maio</h6>
@@ -185,8 +185,8 @@
                                     <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                                         <div class="left-item position-relative d-inline-flex gap-3">
                                             <div class="avatar position-relative d-inline-flex">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-2.png" alt="avatar">
-                                                <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-2.png" alt="avatar">
+                                                <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                             </div>
                                             <div class="text-area">
                                                 <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -202,8 +202,8 @@
                                     <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                                         <div class="left-item position-relative d-inline-flex gap-3">
                                             <div class="avatar position-relative d-inline-flex">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
-                                                <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
+                                                <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                             </div>
                                             <div class="text-area">
                                                 <h6 class="m-0 mb-1">Jacob Jones</h6>
@@ -223,8 +223,8 @@
                                     <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                                         <div class="left-item position-relative d-inline-flex gap-3">
                                             <div class="avatar position-relative d-inline-flex">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
-                                                <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
+                                                <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                             </div>
                                             <div class="text-area">
                                                 <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -244,14 +244,14 @@
                         <div class="single-item d-none d-lg-block profile-area position-relative">
                             <div class="profile-pic d-flex align-items-center">
                                 <span class="avatar cmn-head active-status">
-                                    <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                 </span>
                             </div>
                             <div class="main-area p-5 profile-content">
                                 <div class="head-area">
                                     <div class="d-flex gap-3 align-items-center">
                                         <div class="avatar-item">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="text-area">
                                             <h6 class="m-0 mb-1">Lori Ferguson</h6>
@@ -309,7 +309,7 @@
                     <div class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-7.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-7.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <div class="title-area position-relative d-inline-flex align-items-center">
@@ -323,7 +323,7 @@
                     <div  class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Annette Black</h6>
@@ -334,7 +334,7 @@
                     <div  class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-2.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-2.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Ralph Edwards</h6>
@@ -345,7 +345,7 @@
                     <div  class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Darrell Steward</h6>
@@ -356,7 +356,7 @@
                     <div  class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Wade Warren</h6>
@@ -367,7 +367,7 @@
                     <div  class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-5.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-5.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -378,7 +378,7 @@
                     <div class="single-box p-0 mb-7">
                         <a href="profile-chat.html" class="d-flex gap-2 align-items-center">
                             <div class="avatar">
-                                <img class="avatar-img max-un" src="assets/images/avatar-6.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-6.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Jacob Jones</h6>
@@ -404,8 +404,8 @@
                         <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                             <div class="left-item position-relative d-inline-flex gap-3">
                                 <div class="avatar position-relative d-inline-flex">
-                                    <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
-                                    <img class="abs-item position-absolute max-un" src="assets/images/icon/speech-bubble.png" alt="icon">
+                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
+                                    <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/speech-bubble.png" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h6 class="m-0 mb-1">Piter Maio</h6>
@@ -421,8 +421,8 @@
                         <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                             <div class="left-item position-relative d-inline-flex gap-3">
                                 <div class="avatar position-relative d-inline-flex">
-                                    <img class="avatar-img max-un" src="assets/images/avatar-2.png" alt="avatar">
-                                    <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-2.png" alt="avatar">
+                                    <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -438,8 +438,8 @@
                         <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                             <div class="left-item position-relative d-inline-flex gap-3">
                                 <div class="avatar position-relative d-inline-flex">
-                                    <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
-                                    <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
+                                    <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h6 class="m-0 mb-1">Jacob Jones</h6>
@@ -459,8 +459,8 @@
                         <a href="profile-notification.html" class="d-flex justify-content-between align-items-center">
                             <div class="left-item position-relative d-inline-flex gap-3">
                                 <div class="avatar position-relative d-inline-flex">
-                                    <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
-                                    <img class="abs-item position-absolute max-un" src="assets/images/icon/emoji-love.png" alt="icon">
+                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
+                                    <img class="abs-item position-absolute max-un" src="public/landing-page/assets/images/icon/emoji-love.png" alt="icon">
                                 </div>
                                 <div class="text-area">
                                     <h6 class="m-0 mb-1">Kathryn Murphy</h6>
@@ -480,14 +480,14 @@
             <div class="single-item profile-area position-relative">
                 <div class="profile-pic d-flex align-items-center">
                     <span class="avatar cmn-head active-status">
-                        <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                        <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                     </span>
                 </div>
                 <div class="main-area p-5 profile-content">
                     <div class="head-area">
                         <div class="d-flex gap-3 align-items-center">
                             <div class="avatar-item">
-                                <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1">Lori Ferguson</h6>
@@ -546,7 +546,7 @@
                         </div>
                         <div class="profile-pic d-flex gap-2 align-items-center">
                             <div class="avatar position-relative">
-                                <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                             </div>
                             <div class="text-area">
                                 <h6 class="m-0 mb-1"><a href="profile-post.html">Lerio Mao</a></h6>
@@ -614,25 +614,25 @@
                             <ul>
                                 <li>
                                     <a href="public-profile-post.html" class="d-flex align-items-center gap-3">
-                                        <img src="assets/images/shortcuts-1.png" alt="icon">
+                                        <img src="public/landing-page/assets/images/shortcuts-1.png" alt="icon">
                                         <span>Game Community</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="public-profile-post.html" class="d-flex align-items-center gap-3">
-                                        <img src="assets/images/shortcuts-2.png" alt="icon">
+                                        <img src="public/landing-page/assets/images/shortcuts-2.png" alt="icon">
                                         <span>Pixel Think (Member)</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="public-profile-post.html" class="d-flex align-items-center gap-3">
-                                        <img src="assets/images/shortcuts-3.png" alt="icon">
+                                        <img src="public/landing-page/assets/images/shortcuts-3.png" alt="icon">
                                         <span>8 Ball Pool</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="public-profile-post.html" class="d-flex align-items-center gap-3">
-                                        <img src="assets/images/shortcuts-4.png" alt="icon">
+                                        <img src="public/landing-page/assets/images/shortcuts-4.png" alt="icon">
                                         <span>Gembio</span>
                                     </a>
                                 </li>
@@ -645,7 +645,7 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <a href="#" class="position-relative d-center">
-                                    <img class="bg-img" src="assets/images/story-slider-owner.png" alt="icon">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-owner.png" alt="icon">
                                     <div class="abs-area d-grid p-3 position-absolute bottom-0">
                                         <div class="icon-box m-auto d-center mb-3">
                                             <i class="material-symbols-outlined text-center mat-icon"> add </i>
@@ -658,9 +658,9 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <div class="position-relative d-flex">
-                                    <img class="bg-img" src="assets/images/story-slider-1.png" alt="image">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-1.png" alt="image">
                                     <a href="public-profile-post.html" class="abs-area p-3 position-absolute bottom-0">
-                                        <img src="assets/images/avatar-1.png" alt="image">
+                                        <img src="public/landing-page/assets/images/avatar-1.png" alt="image">
                                         <span class="mdtxt">Alen Lio</span>
                                     </a>
                                 </div>
@@ -669,9 +669,9 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <div class="position-relative d-flex">
-                                    <img class="bg-img" src="assets/images/story-slider-2.png" alt="image">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-2.png" alt="image">
                                     <a href="public-profile-post.html" class="abs-area p-3 position-absolute bottom-0">
-                                        <img src="assets/images/avatar-2.png" alt="image">
+                                        <img src="public/landing-page/assets/images/avatar-2.png" alt="image">
                                         <span class="mdtxt">Josep</span>
                                     </a>
                                 </div>
@@ -680,9 +680,9 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <div class="position-relative d-flex">
-                                    <img class="bg-img" src="assets/images/story-slider-3.png" alt="image">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-3.png" alt="image">
                                     <a href="public-profile-post.html" class="abs-area p-3 position-absolute bottom-0">
-                                        <img src="assets/images/avatar-3.png" alt="image">
+                                        <img src="public/landing-page/assets/images/avatar-3.png" alt="image">
                                         <span class="mdtxt">Jessica</span>
                                     </a>
                                 </div>
@@ -691,9 +691,9 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <div class="position-relative d-flex">
-                                    <img class="bg-img" src="assets/images/story-slider-4.png" alt="image">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-4.png" alt="image">
                                     <a href="public-profile-post.html" class="abs-area p-3 position-absolute bottom-0">
-                                        <img src="assets/images/avatar-4.png" alt="image">
+                                        <img src="public/landing-page/assets/images/avatar-4.png" alt="image">
                                         <span class="mdtxt">Alen</span>
                                     </a>
                                 </div>
@@ -702,9 +702,9 @@
                         <div class="single-item">
                             <div class="single-slide">
                                 <div class="position-relative d-flex">
-                                    <img class="bg-img" src="assets/images/story-slider-4.png" alt="image">
+                                    <img class="bg-img" src="public/landing-page/assets/images/story-slider-4.png" alt="image">
                                     <a href="public-profile-post.html" class="abs-area p-3 position-absolute bottom-0">
-                                        <img src="assets/images/avatar-5.png" alt="image">
+                                        <img src="public/landing-page/assets/images/avatar-5.png" alt="image">
                                         <span class="mdtxt">Jacob Jones</span>
                                     </a>
                                 </div>
@@ -713,7 +713,7 @@
                     </div>
                     <div class="share-post d-flex gap-3 gap-sm-5 p-3 p-sm-5">
                         <div class="profile-box">
-                            <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                            <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                         </div>
                         <form action="#" class="w-100 position-relative">
                             <textarea cols="10" rows="2" placeholder="Write something to Lerio.."></textarea>
@@ -722,15 +722,15 @@
                             </div>
                             <ul class="d-flex justify-content-between flex-wrap mt-3 gap-3">
                                 <li class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#goLiveMod">
-                                    <img src="assets/images/icon/live-video.png" class="max-un" alt="icon">
+                                    <img src="public/landing-page/assets/images/icon/live-video.png" class="max-un" alt="icon">
                                     <span>Live</span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#photoVideoMod">
-                                    <img src="assets/images/icon/vgallery.png" class="max-un" alt="icon">
+                                    <img src="public/landing-page/assets/images/icon/vgallery.png" class="max-un" alt="icon">
                                     <span>Photo/Video</span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#activityMod">
-                                    <img src="assets/images/icon/emoji-laughing.png" class="max-un" alt="icon">
+                                    <img src="public/landing-page/assets/images/icon/emoji-laughing.png" class="max-un" alt="icon">
                                     <span>Fallings/Activity</span>
                                 </li>
                             </ul>
@@ -742,7 +742,7 @@
                                 <div class="profile-area d-center justify-content-between">
                                     <div class="avatar-item d-flex gap-3 align-items-center">
                                         <div class="avatar position-relative">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="info-area">
                                             <h6 class="m-0"><a href="public-profile-post.html">Lori Cortez</a></h6>
@@ -791,15 +791,15 @@
                                     <p class="description">I created Roughly plugin to sketch crafted hand-drawn elements which can be used to any usage (diagrams/flows/decoration/etc)</p>
                                 </div>
                                 <div class="post-img">
-                                    <img src="assets/images/post-img-1.png" class="w-100" alt="image">
+                                    <img src="public/landing-page/assets/images/post-img-1.png" class="w-100" alt="image">
                                 </div>
                             </div>
                             <div class="total-react-share pb-4 d-center gap-2 flex-wrap justify-content-between">
                                 <div class="friends-list d-flex gap-3 align-items-center text-center">
                                     <ul class="d-flex align-items-center justify-content-center">
-                                        <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                         <li><span class="mdtxt d-center">8+</span></li>
                                     </ul>
                                 </div>
@@ -825,7 +825,7 @@
                             <form action="#">
                                 <div class="d-flex mt-5 gap-3">
                                     <div class="profile-box d-none d-xxl-block">
-                                        <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                        <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                     </div>
                                     <div class="form-content input-area py-1 d-flex gap-2 align-items-center w-100">
                                         <input placeholder="Write a comment..">
@@ -864,7 +864,7 @@
                                 <div class="profile-area d-center justify-content-between">
                                     <div class="avatar-item d-flex gap-3 align-items-center">
                                         <div class="avatar position-relative">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="info-area">
                                             <h6 class="m-0"><a href="public-profile-post.html">Lori Cortez</a></h6>
@@ -914,20 +914,20 @@
                                 </div>
                                 <div class="post-img  d-flex justify-content-between flex-wrap gap-2 gap-lg-3">
                                     <div class="single">
-                                        <img src="assets/images/post-img-2.png" alt="image">
+                                        <img src="public/landing-page/assets/images/post-img-2.png" alt="image">
                                     </div>
                                     <div class="single d-grid gap-3">
-                                        <img src="assets/images/post-img-3.png" alt="image">
-                                        <img src="assets/images/post-img-4.png" alt="image">
+                                        <img src="public/landing-page/assets/images/post-img-3.png" alt="image">
+                                        <img src="public/landing-page/assets/images/post-img-4.png" alt="image">
                                     </div>
                                 </div>
                             </div>
                             <div class="total-react-share pb-4 d-center gap-2 flex-wrap justify-content-between">
                                 <div class="friends-list d-flex gap-3 align-items-center text-center">
                                     <ul class="d-flex align-items-center justify-content-center">
-                                        <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                         <li><span class="mdtxt d-center">8+</span></li>
                                     </ul>
                                 </div>
@@ -953,7 +953,7 @@
                             <form action="#">
                                 <div class="d-flex mt-5 gap-3">
                                     <div class="profile-box d-none d-xxl-block">
-                                        <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                        <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                     </div>
                                     <div class="form-content input-area py-1 d-flex gap-2 align-items-center w-100">
                                         <input placeholder="Write a comment..">
@@ -990,7 +990,7 @@
                                 <div class="single-comment-area ms-1 ms-xxl-15">
                                     <div class="parent-comment d-flex gap-2 gap-sm-4">
                                         <div class="avatar-item d-center align-items-baseline">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                                         </div>
                                         <div class="info-item">
                                             <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
@@ -1042,7 +1042,7 @@
                                     <div class="single-comment-area comment-item-nested mt-4 mt-sm-7 ms-13 ms-sm-15">
                                         <div class="d-flex gap-2 gap-sm-4 align-items-baseline">
                                             <div class="avatar-item">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                                             </div>
                                             <div class="info-item">
                                                 <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
@@ -1100,7 +1100,7 @@
                                 <div class="profile-area d-center justify-content-between">
                                     <div class="avatar-item d-flex gap-3 align-items-center">
                                         <div class="avatar-item">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-5.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-5.png" alt="avatar">
                                         </div>
                                         <div class="info-area">
                                             <h6 class="m-0"><a href="public-profile-post.html">Loprayos</a></h6>
@@ -1152,9 +1152,9 @@
                             <div class="total-react-share pb-4 d-center gap-2 flex-wrap justify-content-between">
                                 <div class="friends-list d-flex gap-3 align-items-center text-center">
                                     <ul class="d-flex align-items-center justify-content-center">
-                                        <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                         <li><span class="mdtxt d-center">8+</span></li>
                                     </ul>
                                 </div>
@@ -1180,7 +1180,7 @@
                             <form action="#">
                                 <div class="d-flex mt-5 gap-3">
                                     <div class="profile-box d-none d-xxl-block">
-                                        <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                        <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                     </div>
                                     <div class="form-content input-area py-1 d-flex gap-2 align-items-center w-100">
                                         <input placeholder="Write a comment..">
@@ -1217,7 +1217,7 @@
                                 <div class="single-comment-area ms-1 ms-xxl-15">
                                     <div class="parent-comment d-flex gap-2 gap-sm-4">
                                         <div class="avatar-item d-center align-items-baseline">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                                         </div>
                                         <div class="info-item active">
                                             <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
@@ -1269,7 +1269,7 @@
                                     <div class="sibling-comment comment-item-nested single-comment-area mt-7 ms-13 ms-sm-15">
                                         <div class="d-flex gap-2 gap-sm-4 align-items-baseline">
                                             <div class="avatar-item">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                                             </div>
                                             <div class="info-item">
                                                 <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
@@ -1322,7 +1322,7 @@
                                     <div class="single-comment-area comment-item-nested mt-7 ms-13 ms-sm-15">
                                         <div class="d-flex gap-2 gap-sm-4 align-items-baseline">
                                             <div class="avatar-item">
-                                                <img class="avatar-img max-un" src="assets/images/avatar-7.png" alt="avatar">
+                                                <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-7.png" alt="avatar">
                                             </div>
                                             <div class="info-item">
                                                 <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
@@ -1378,14 +1378,14 @@
                                 <div class="single-comment-area ms-1 ms-xxl-15">
                                     <div class="d-flex gap-4">
                                         <div class="avatar-item d-center align-items-baseline">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                                         </div>
                                         <div class="info-item w-100">
                                             <div class="top-area px-4 py-3 d-flex gap-3 align-items-start justify-content-between">
                                                 <div class="title-area">
                                                     <h6 class="m-0 mb-3"><a href="public-profile-post.html">Marlio</a></h6>
                                                     <div class="post-img">
-                                                        <img src="assets/images/icon/emoji-love-2.png" alt="icon">
+                                                        <img src="public/landing-page/assets/images/icon/emoji-love-2.png" alt="icon">
                                                     </div>
                                                 </div>
                                                 <div class="btn-group dropend cus-dropdown">
@@ -1437,7 +1437,7 @@
                                 <div class="profile-area d-center justify-content-between">
                                     <div class="avatar-item d-flex gap-3 align-items-center">
                                         <div class="avatar position-relative">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="info-area">
                                             <h6 class="m-0"><a href="public-profile-post.html">Lori Cortez</a></h6>
@@ -1498,9 +1498,9 @@
                             <div class="total-react-share pb-4 d-center gap-2 flex-wrap justify-content-between">
                                 <div class="friends-list d-flex gap-3 align-items-center text-center">
                                     <ul class="d-flex align-items-center justify-content-center">
-                                        <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                         <li><span class="mdtxt d-center">8+</span></li>
                                     </ul>
                                 </div>
@@ -1526,7 +1526,7 @@
                             <form action="#">
                                 <div class="d-flex mt-5 gap-3">
                                     <div class="profile-box d-none d-xxl-block">
-                                        <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                        <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                     </div>
                                     <div class="form-content input-area py-1 d-flex gap-2 align-items-center w-100">
                                         <input placeholder="Write a comment..">
@@ -1565,7 +1565,7 @@
                                 <div class="profile-area d-center justify-content-between">
                                     <div class="avatar-item d-flex gap-3 align-items-center">
                                         <div class="avatar position-relative">
-                                            <img class="avatar-img max-un" src="assets/images/avatar-1.png" alt="avatar">
+                                            <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-1.png" alt="avatar">
                                         </div>
                                         <div class="info-area">
                                             <h6 class="m-0"><a href="public-profile-post.html">Lori Cortez</a></h6>
@@ -1614,15 +1614,15 @@
                                     <p class="description">I created Roughly plugin to sketch crafted hand-drawn elements which can be used to any usage (diagrams/flows/decoration/etc)</p>
                                 </div>
                                 <div class="post-img">
-                                    <img src="assets/images/post-img-1.png" class="w-100" alt="image">
+                                    <img src="public/landing-page/assets/images/post-img-1.png" class="w-100" alt="image">
                                 </div>
                             </div>
                             <div class="total-react-share pb-4 d-center gap-2 flex-wrap justify-content-between">
                                 <div class="friends-list d-flex gap-3 align-items-center text-center">
                                     <ul class="d-flex align-items-center justify-content-center">
-                                        <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                        <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                        <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                         <li><span class="mdtxt d-center">8+</span></li>
                                     </ul>
                                 </div>
@@ -1648,7 +1648,7 @@
                             <form action="#">
                                 <div class="d-flex mt-5 gap-3">
                                     <div class="profile-box d-none d-xxl-block">
-                                        <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                        <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                     </div>
                                     <div class="form-content input-area py-1 d-flex gap-2 align-items-center w-100">
                                         <input placeholder="Write a comment..">
@@ -1707,15 +1707,15 @@
                                         <div class="single-single">
                                             <div class="profile-pic d-flex gap-3 align-items-center">
                                                 <div class="avatar">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                                                 </div>
                                                 <div class="text-area">
                                                     <a href="public-profile-post.html"><h6 class="m-0">Lerio Mao</h6></a>
                                                     <div class="friends-list d-flex gap-3 align-items-center text-center">
                                                         <ul class="d-flex align-items-center justify-content-center">
-                                                            <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                                            <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                                            <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                                         </ul>
                                                         <span class="mdtxt d-center">10 mutual friends</span>
                                                     </div>
@@ -1729,15 +1729,15 @@
                                         <div class="single-single">
                                             <div class="profile-pic d-flex gap-3 align-items-center">
                                                 <div class="avatar">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-5.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-5.png" alt="avatar">
                                                 </div>
                                                 <div class="text-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html">Marinez</a></h6>
                                                     <div class="friends-list d-flex gap-3 align-items-center text-center">
                                                         <ul class="d-flex align-items-center justify-content-center">
-                                                            <li><img src="assets/images/avatar-2.png" alt="image"></li>
-                                                            <li><img src="assets/images/avatar-3.png" alt="image"></li>
-                                                            <li><img src="assets/images/avatar-4.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-2.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-3.png" alt="image"></li>
+                                                            <li><img src="public/landing-page/assets/images/avatar-4.png" alt="image"></li>
                                                         </ul>
                                                         <span class="mdtxt d-center">10 mutual friends</span>
                                                     </div>
@@ -1760,7 +1760,7 @@
                                         <div class="profile-area d-center position-relative align-items-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-6.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-6.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Piter Maio</a></h6>
@@ -1771,7 +1771,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-7.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-7.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Floyd Miles</a></h6>
@@ -1800,7 +1800,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-8.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-8.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Darrell Steward</a></h6>
@@ -1829,7 +1829,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-2.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-2.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Kristin Watson</a></h6>
@@ -1858,7 +1858,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-3.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-3.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Jane Cooper</a></h6>
@@ -1887,7 +1887,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-4.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-4.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Devon Lane</a></h6>
@@ -1916,7 +1916,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-9.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-9.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Annette Black</a></h6>
@@ -1945,7 +1945,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-10.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-10.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Jerome Bell</a></h6>
@@ -1974,7 +1974,7 @@
                                         <div class="profile-area d-center justify-content-between">
                                             <div class="avatar-item d-flex gap-3 align-items-center">
                                                 <div class="avatar-item">
-                                                    <img class="avatar-img max-un" src="assets/images/avatar-11.png" alt="avatar">
+                                                    <img class="avatar-img max-un" src="public/landing-page/assets/images/avatar-11.png" alt="avatar">
                                                 </div>
                                                 <div class="info-area">
                                                     <h6 class="m-0"><a href="public-profile-post.html" class="mdtxt">Guy Hawkins</a></h6>
@@ -2030,7 +2030,7 @@
                                 <div class="mid-area">
                                     <div class="d-flex mb-5 gap-3">
                                         <div class="profile-box">
-                                            <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                            <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                         </div>
                                         <textarea cols="10" rows="2" placeholder="Write something to Lerio.."></textarea>
                                     </div>
@@ -2079,7 +2079,7 @@
                                 <div class="mid-area">
                                     <div class="d-flex mb-5 gap-3">
                                         <div class="profile-box">
-                                            <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                            <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                         </div>
                                         <textarea cols="10" rows="2" placeholder="Write something to Lerio.."></textarea>
                                     </div>
@@ -2128,7 +2128,7 @@
                                 <div class="mid-area">
                                     <div class="d-flex mb-5 gap-3">
                                         <div class="profile-box">
-                                            <a href="#"><img src="assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
+                                            <a href="#"><img src="public/landing-page/assets/images/add-post-avatar.png" class="max-un" alt="icon"></a>
                                         </div>
                                         <textarea cols="10" rows="2" placeholder="Write something to Lerio.."></textarea>
                                     </div>
@@ -2181,15 +2181,15 @@
     <!-- Go Live Popup end -->
 
     <!--==================================================================-->
-    <script src="assets/js/plugins/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/plugins/slick.js"></script>
-    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
-    <script src="assets/js/plugins/plyr.js"></script>
-    <script src="assets/js/plugins/apexcharts.js"></script>
-    <script src="assets/js/plugins/wow.min.js"></script>
-    <script src="assets/js/plugins/plugin.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="public/landing-page/assets/js/plugins/jquery.min.js"></script>
+    <script src="public/landing-page/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="public/landing-page/assets/js/plugins/slick.js"></script>
+    <script src="public/landing-page/assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="public/landing-page/assets/js/plugins/plyr.js"></script>
+    <script src="public/landing-page/assets/js/plugins/apexcharts.js"></script>
+    <script src="public/landing-page/assets/js/plugins/wow.min.js"></script>
+    <script src="public/landing-page/assets/js/plugins/plugin.js"></script>
+    <script src="public/landing-page/assets/js/main.js"></script>
 
 </body>
 
