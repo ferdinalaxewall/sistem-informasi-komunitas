@@ -6,7 +6,9 @@ class Pengguna extends CI_Controller
     {
         $data = [
             'title' => 'List Pengguna',
-            'items' => $this->user->all()
+            'items' => $this->user->findAll([
+                'role' => 'pengguna'
+            ])
         ];
 
         $this->load->view('admin/templates/header', $data);
