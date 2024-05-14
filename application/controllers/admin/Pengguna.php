@@ -2,6 +2,14 @@
 
 class Pengguna extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        cek_login();
+        cek_admin();
+    }
+
+
     public function index()
     {
         $data = [

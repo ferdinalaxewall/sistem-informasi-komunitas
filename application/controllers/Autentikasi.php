@@ -36,6 +36,7 @@ class Autentikasi extends CI_Controller
                 $data = [
                     'id' => $user->id,
                     'email' => $user->email,
+                    'role' => $user->role
                 ];
 
                 $this->session->set_userdata($data);
