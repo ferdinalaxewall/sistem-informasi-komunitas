@@ -6,6 +6,14 @@
             <h5 class="card-header mb-0"><?= $title ?></h5>
         </div>
         <div class="card-body pt-0">
+            <?php if (validation_errors()) { ?>
+                <div class="alert alert-danger alert-dismissible" role="alert" data-type="validation-notification">
+                    <?= validation_errors() ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                </div>
+            <?php } ?>
+            
             <form action="<?= $action_url ?>" method="POST" class="row">
                 <div class="col-12 mb-3">
                     <label for="nama_kategori" class="form-label required">Nama Kategori</label>
