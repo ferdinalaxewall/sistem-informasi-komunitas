@@ -116,7 +116,7 @@
               <!-- /Logo -->
 
               <div class="text-center">
-                <h4 class="mb-2">Selamat Datang! 👋</h4>
+                <h4 class="mb-2">Selamat Datang 👋</h4>
                 <p class="mb-4 text-muted">Bersiaplah untuk terhubung dan berbagi dengan komunitas kami.</p>
               </div>
 

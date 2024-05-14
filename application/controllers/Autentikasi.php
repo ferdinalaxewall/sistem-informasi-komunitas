@@ -5,7 +5,7 @@ class Autentikasi extends CI_Controller
     public function index()
     {
         if ($this->session->userdata('role')) {
-            if ($this->sesssion->userdata('role') == 'admin') {
+            if ($this->session->userdata('role') == 'admin') {
                 redirect(base_url('admin/dashboard'));
             } else {
                 redirect(base_url());

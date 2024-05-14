@@ -16,10 +16,10 @@ function cek_login()
 function cek_admin()
 {
     $ci = get_instance();
-    $role = $this->session->userdata('role');
+    $role = $ci->session->userdata('role');
 
     if ($role != 'admin') {
-        $this->session->set_flashdata('error', 'Akses tidak diizinkan!');
+        $ci->session->set_flashdata('error', 'Akses tidak diizinkan!');
         redirect(base_url());
     }
 }
