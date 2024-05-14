@@ -89,7 +89,7 @@
         <!-- Pengguna -->
         <li class="menu-item">
             <a
-            href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+            href="<?= base_url('admin/pengguna') ?>"
             class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Pengguna">Pengguna</div>

@@ -47,6 +47,18 @@
     <script src="<?= base_url('public/admin/assets/js/config.js') ?>"></script>
   </head>
 
+  <style>
+    label.required::after{
+        content: '*';
+        color: red;
+        margin-left: 5px;
+    }
+
+    .alert[data-type="validation-notification"] p {
+      margin-bottom: 5px;
+    }
+  </style>
+
   <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
