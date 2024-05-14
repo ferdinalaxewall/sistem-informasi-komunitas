@@ -125,7 +125,7 @@
         <!-- Kategori Event -->
         <li class="menu-item">
             <a
-            href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+            href="<?= base_url('admin/kategori_event') ?>"
             class="menu-link">
                 <i class="menu-icon tf-icons bx bx-purchase-tag"></i>
                 <div data-i18n="Kategori Event">Kategori Event</div>
