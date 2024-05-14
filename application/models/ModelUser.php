@@ -77,4 +77,20 @@ class ModelUser extends BaseModel
 
         return $globalRules;
     }
+
+    public function loginRules()
+    {
+        return [
+            [
+                'field' => 'email',
+                'label' => 'Email',
+                'rules' => 'trim|required',
+            ],
+            [
+                'field' => 'password',
+                'label' => 'Password',
+                'rules' => 'required',
+            ],
+        ];
+    }
 }
