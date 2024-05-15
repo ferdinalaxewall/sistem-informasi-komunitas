@@ -39,6 +39,26 @@ class Profil extends CI_Controller
                 $request['password'] = password_hash($password, PASSWORD_BCRYPT);
             }
 
+            $config['upload_path'] = './public/system/img/profile/';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['max_size'] = '3000';
+            $config['file_name'] = 'pro' . time();
+
+            $upload_image = $_FILES['image']['name'];
+            
+            $this->load->library('upload');
+            $this->upload->initialize($config);
+            
+            if ($upload_image && $this->upload->do_upload('image')) {
+                if (!empty($data['user']->image)) {
+                    unlink(FCPATH . 'public/system/img/profile/' . $data['user']->image);
+                }
+
+                $request['image'] = $this->upload->data('file_name');
+            } else {
+                $request['image'] = $data['user']->image;
+            }
+
             $this->user->updateById($id, $request);
             $this->session->set_flashdata('success', 'Profil Berhasil Diubah');
             redirect(base_url('admin/profil'));

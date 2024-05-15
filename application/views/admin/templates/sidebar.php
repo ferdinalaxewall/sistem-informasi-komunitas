@@ -112,7 +112,7 @@
         <!-- Forum -->
         <li class="menu-item">
             <a
-            href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+            href="<?= base_url('admin/forum') ?>"
             class="menu-link">
                 <i class="menu-icon tf-icons bx bx-chat"></i>
                 <div data-i18n="Forum">Forum</div>
@@ -135,7 +135,7 @@
         <!-- Event -->
         <li class="menu-item">
             <a
-            href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+            href="<?= base_url('admin/event') ?>"
             class="menu-link">
                 <i class="menu-icon tf-icons bx bx-calendar-event"></i>
                 <div data-i18n="Event">Event</div>

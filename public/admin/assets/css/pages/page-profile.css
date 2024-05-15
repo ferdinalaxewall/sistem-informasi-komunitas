@@ -10,7 +10,8 @@
 
 .user-profile-header .user-profile-img {
     border: 5px solid;
-    width: 120px
+    width: 120px;
+    object-fit: cover;
 }
 
 .light-style .user-profile-header .user-profile-img {
