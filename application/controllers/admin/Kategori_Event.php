@@ -14,7 +14,8 @@ class Kategori_Event extends CI_Controller
     {
         $data = [
             'title' => 'List Kategori Event',
-            'items' => $this->kategoriEvent->all()
+            'items' => $this->kategoriEvent->all(),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->load->view('admin/templates/header', $data);
@@ -29,7 +30,8 @@ class Kategori_Event extends CI_Controller
         $data = [
             'action_url' => base_url('admin/kategori_event/tambah'),
             'item' => NULL,
-            'title' => "Form Tambah Kategori Event"
+            'title' => "Form Tambah Kategori Event",
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->form_validation->set_rules($this->kategoriEvent->rules());
@@ -58,7 +60,8 @@ class Kategori_Event extends CI_Controller
         $data = [
             'action_url' => base_url("admin/kategori_event/ubah/{$id}"),
             'item' => $this->kategoriEvent->findOneById($id),
-            'title' => "Form Ubah Kategori Event"
+            'title' => "Form Ubah Kategori Event",
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->form_validation->set_rules($this->kategoriEvent->rules());

@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/css/core.css') ?>" class="template-customizer-core-css" />
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/css/theme-default.css') ?>" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/css/demo.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/admin/assets/css/pages/page-profile.css') ?>" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />

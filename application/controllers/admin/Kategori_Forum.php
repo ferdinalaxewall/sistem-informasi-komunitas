@@ -14,7 +14,8 @@ class Kategori_Forum extends CI_Controller
     {
         $data = [
             'title' => 'List Kategori Forum',
-            'items' => $this->kategoriForum->all()
+            'items' => $this->kategoriForum->all(),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->load->view('admin/templates/header', $data);
@@ -29,7 +30,8 @@ class Kategori_Forum extends CI_Controller
         $data = [
             'action_url' => base_url('admin/kategori_forum/tambah'),
             'item' => NULL,
-            'title' => "Form Tambah Kategori Forum"
+            'title' => "Form Tambah Kategori Forum",
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->form_validation->set_rules($this->kategoriForum->rules());
@@ -58,7 +60,8 @@ class Kategori_Forum extends CI_Controller
         $data = [
             'action_url' => base_url("admin/kategori_forum/ubah/{$id}"),
             'item' => $this->kategoriForum->findOneById($id),
-            'title' => "Form Ubah Kategori Forum"
+            'title' => "Form Ubah Kategori Forum",
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->form_validation->set_rules($this->kategoriForum->rules());

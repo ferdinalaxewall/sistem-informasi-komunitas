@@ -16,7 +16,8 @@ class Administrator extends CI_Controller
             'title' => 'List Administrator',
             'items' => $this->user->findAll([
                 'role' => 'admin'
-            ])
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
         $this->load->view('admin/templates/header', $data);
@@ -33,6 +34,7 @@ class Administrator extends CI_Controller
             'item' => NULL,
             'title' => "Form Tambah Administrator",
             'is_update' => false,
+            'user' => $this->user->findOneById($this->session->userdata('id')),
         ];
 
         $this->form_validation->set_rules($this->user->newUserRules());
@@ -71,6 +73,7 @@ class Administrator extends CI_Controller
             'item' => $this->user->findOneById($id),
             'title' => "Form Ubah Administrator",
             'is_update' => true,
+            'user' => $this->user->findOneById($this->session->userdata('id')),
         ];
 
         $this->form_validation->set_rules($this->user->updateUserRules($id));

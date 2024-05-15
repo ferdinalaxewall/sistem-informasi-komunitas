@@ -66,7 +66,7 @@
         <!-- Apps -->
         <li class="menu-item">
             <a
-            href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+            href="<?= base_url('admin/dashboard') ?>"
             class="menu-link">
                 <i class="menu-icon tf-icons bx bx-grid-alt"></i>
                 <div data-i18n="Dashboard">Dashboard</div>

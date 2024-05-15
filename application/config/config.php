@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+setlocale(LC_TIME, 'id_ID');
+date_default_timezone_set('Asia/Jakarta');
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL

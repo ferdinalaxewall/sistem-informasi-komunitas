@@ -1,6 +1,5 @@
 <div class="container-fluid flex-grow-1 container-p-y">
-    <!-- Tabel Kategori Forum -->
-
+    <!-- Form Administrator -->
     <div class="card">
         <div class="d-flex align-items-center justify-content-between pe-4">
             <h5 class="card-header mb-0"><?= $title ?></h5>
@@ -47,6 +46,6 @@
             </form>
         </div>
     </div>
-    <!-- End Tabel Kategori Forum -->
+    <!-- End Form Administrator -->
 </div>
 <!-- / Content -->
