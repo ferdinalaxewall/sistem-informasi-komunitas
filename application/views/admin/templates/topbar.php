@@ -24,7 +24,7 @@
                         <div class="d-flex">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar avatar-online">
-                                    <img src='<?= base_url("public/system/img/profile/{$user->image}") ?>' onerror="this.src='<?= base_url('public/admin/assets/img/avatars/1.png') ?>'" alt class="w-px-40 h-auto rounded-circle" />
+                                    <img src='<?= base_url("public/system/img/profile/{$user->image}") ?>' onerror="this.src='<?= base_url('public/admin/assets/img/avatars/1.png') ?>'" alt class="w-px-40 h-100 rounded-circle" style="object-fit: cover;" />
                                 </div>
                             </div>
                             <div class="flex-grow-1">

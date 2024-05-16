@@ -3,7 +3,7 @@
     <div class="layout-demo-wrapper">
         <div class="layout-demo-placeholder">
             <img
-            src="../assets/img/layouts/layout-fluid-light.png"
+            src="<?= base_url('public/admin/assets/img/layouts/layout-fluid-light.png') ?>"
             class="img-fluid"
             alt="Layout fluid"
             data-app-light-img="layouts/layout-fluid-light.png"

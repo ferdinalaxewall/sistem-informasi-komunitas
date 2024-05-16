@@ -137,4 +137,5 @@ $autoload['model'] = array(
     'ModelKategoriEvent' => 'kategoriEvent',
     'ModelUser' => 'user',
     'ModelForum' => 'forum',
+    'ModelEvent' => 'event',
 );
