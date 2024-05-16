@@ -9,7 +9,6 @@ class Kategori_Event extends CI_Controller
         cek_admin();
     }
 
-
     public function index()
     {
         $data = [
