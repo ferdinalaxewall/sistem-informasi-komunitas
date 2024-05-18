@@ -176,7 +176,6 @@
     <script src="<?= base_url('public/landing-page/assets/js/plugins/jquery.min.js') ?>"></script>
     <script src="<?= base_url('public/landing-page/assets/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('public/landing-page/assets/js/plugins/slick.js') ?>"></script>
-    <script src="<?= base_url('public/landing-page/assets/js/plugins/jquery.nice-select.min.js') ?>"></script>
     <script src="<?= base_url('public/landing-page/assets/js/plugins/plyr.js') ?>"></script>
     <script src="<?= base_url('public/landing-page/assets/js/plugins/apexcharts.js') ?>"></script>
     <script src="<?= base_url('public/landing-page/assets/js/plugins/wow.min.js') ?>"></script>

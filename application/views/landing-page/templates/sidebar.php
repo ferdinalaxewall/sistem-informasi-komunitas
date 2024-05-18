@@ -21,13 +21,13 @@
                             <img class="avatar-img max-un" src='<?= base_url("public/system/img/profile/{$user->image}") ?>' onerror="this.src='<?= base_url('public/landing-page/assets/images/avatar-1.png') ?>'" alt="avatar" style="width: 50px; height: 50px; object-fit: cover; object-position: center;">
                         </div>
                         <div class="text-area">
-                            <h6 class="m-0 mb-1"><a href="profile-post.html"><?= $user?->nama ?></a></h6>
+                            <h6 class="m-0 mb-1"><?= $user?->nama ?></h6>
                             <p class="mdtxt text-muted" style="text-transform: capitalize;"><?= $user?->role ?></p>
                         </div>
                     </div>
                     <ul class="profile-link mt-7 mb-7 pb-7">
                         <li>
-                            <a href="<?= base_url() ?>" class="d-flex gap-4 active">
+                            <a href="<?= base_url() ?>" class="d-flex gap-4">
                                 <i class="material-symbols-outlined mat-icon"> home </i>
                                 <span>Home</span>
                             </a>

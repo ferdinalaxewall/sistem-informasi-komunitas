@@ -92,4 +92,53 @@ class Forum extends CI_Controller
             redirect(base_url("forum/detail/{$forum_id}"));
         }
     }
+
+    public function buat_forum()
+    {
+        $data = [
+            'title' => 'Buat Forum',
+            'user' => $this->user->findOneById($this->session->userdata('id')),
+            'categories' => $this->kategoriForum->all(),
+            'is_update' => false,
+            'action_url' => base_url('forum/buat_forum'),
+            'item' => NULL,
+        ];
+
+        $this->form_validation->set_rules($this->forum->rules());
+
+        if (!$this->form_validation->run()) {
+            $this->load->view('landing-page/templates/header', $data);
+            $this->load->view('landing-page/templates/navbar', $data);
+            $this->load->view('landing-page/templates/sidebar', $data);
+            $this->load->view('landing-page/pages/forum/form', $data);
+            $this->load->view('landing-page/templates/footer', $data);
+        } else {
+            $request = [
+                'judul' => $this->input->post('judul', true),
+                'deskripsi' => $this->input->post('deskripsi', true),
+                'kategori_forum_id' => $this->input->post('kategori_forum_id', true),
+                'user_id' => $this->session->userdata('id'),
+                'is_active' => false,
+                'is_verified' => false,
+            ];
+
+            $config['upload_path'] = './public/system/img/forum/';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['max_size'] = '3000';
+            $config['file_name'] = 'forum-' . time();
+
+            $upload_image = $_FILES['thumbnail']['name'];
+            
+            $this->load->library('upload');
+            $this->upload->initialize($config);
+            
+            if ($upload_image && $this->upload->do_upload('thumbnail')) {
+                $request['thumbnail'] = $this->upload->data('file_name');
+            }
+
+            $this->forum->create($request);
+            $this->session->set_flashdata('success', 'Forum Berhasil Ditambahkan dan Akan Diverifikasi Terlebih Dahulu!');
+            redirect(base_url('forum'));
+        }
+    }
 }

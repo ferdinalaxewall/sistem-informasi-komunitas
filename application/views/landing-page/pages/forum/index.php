@@ -13,7 +13,7 @@
             <?php } ?>
         </ul>
         <div class="btn-item">
-            <a href="#" class="cmn-btn gap-1">
+            <a href="<?= base_url('forum/buat_forum') ?>" class="cmn-btn gap-1">
                 <i class="material-symbols-outlined mat-icon"> add </i>
                 Buat Forum
             </a>

@@ -13,9 +13,9 @@
             <?php } ?>
         </ul>
         <div class="btn-item">
-            <a href="event.html" class="cmn-btn gap-1">
+            <a href="<?= base_url('event/buat_event') ?>" class="cmn-btn gap-1">
                 <i class="material-symbols-outlined mat-icon"> add </i>
-                Create Event
+                Buat Event
             </a>
         </div>
     </div>
@@ -31,25 +31,6 @@
                                         <img class="avatar-img w-100 rounded" src='<?= base_url("public/system/img/event/{$data->thumbnail}") ?>' onerror="this.src='<?= base_url('public/landing-page/assets/images/event-img-1.png') ?>'" alt="avatar" style="height: 150px; object-fit: cover; background-color: #fff; overflow-hidden;">
                                         <div class="abs-area w-100 position-absolute top-0 p-3 d-center justify-content-between">
                                             <span class="date-area mdtxt"><?= date('d M Y', strtotime($data->waktu_mulai)) ?></span>
-                                            <div class="btn-group cus-dropdown dropend">
-                                                <button type="button" class="dropdown-btn d-center px-2" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="material-symbols-outlined fs-xxl m-0"> more_horiz </i>
-                                                </button>
-                                                <ul class="dropdown-menu p-4 pt-2">
-                                                    <li>
-                                                        <a class="droplist d-flex align-items-center gap-2" href="#">
-                                                            <i class="material-symbols-outlined mat-icon"> person_remove </i>
-                                                            <span>Unfollow</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="droplist d-flex align-items-center gap-2" href="#">
-                                                            <i class="material-symbols-outlined mat-icon"> hide_source </i>
-                                                            <span>Hide</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
                                     </div>
                                     <a href="<?= base_url('event/detail/' . $data->id) ?>"><h6 class="m-0 mt-4"><?= $data->judul ?></h6></a>

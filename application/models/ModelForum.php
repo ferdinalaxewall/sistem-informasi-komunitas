@@ -21,12 +21,7 @@ class ModelForum extends BaseModel
                 'field' => 'kategori_forum_id',
                 'label' => 'Kategori Forum',
                 'rules' => 'required',
-            ],  
-            [
-                'field' => 'is_active',
-                'label' => 'Status Aktif',
-                'rules' => 'required|in_list[true,false]',
-            ]
+            ],
         ];
     }
 
