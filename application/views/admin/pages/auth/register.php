@@ -5,7 +5,7 @@
   class="light-style layout-wide customizer-hide"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="<?= base_url('assets/') ?>"
+  data-assets-path="<?= base_url('public/admin/assets/') ?>"
   data-template="vertical-menu-template-free">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Sistem Infromasi Komunitas - Login</title>
+    <title>Register Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
 
@@ -36,7 +36,6 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
-    <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/iziToast/css/iziToast.min.css') ?>" />
 
     <!-- Page CSS -->
     <!-- Page -->
@@ -54,13 +53,13 @@
 
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
-        <div class="authentication-inner">
-          <!-- Register -->
+        <div class="authentication-inner" style="width: min(800px, 90vw); max-width: none;">
+          <!-- Register Card -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-                <a href="index.html" class="app-brand-link gap-2">
+                <a href="#" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <svg
                       width="25"
@@ -114,121 +113,100 @@
                 </a>
               </div>
               <!-- /Logo -->
-
               <div class="text-center">
-                <h4 class="mb-2">Selamat Datang 👋</h4>
-                <p class="mb-4 text-muted">Bersiaplah untuk terhubung dan berbagi dengan komunitas kami.</p>
+                  <h4 class="mb-2">Sistem Informasi Komunitas</h4>
+                  <p class="mb-4">Ayo mulai berdiskusi!</p>
               </div>
 
-              <?php if (validation_errors()) { ?>
-                  <div class="alert alert-danger alert-dismissible" role="alert" data-type="validation-notification">
-                      <?= validation_errors() ?>
-                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                      </button>
-                  </div>
-              <?php } ?>
+              <form id="formAuthentication" class="mb-3 row" action="<?= base_url('autentikasi/registrasi') ?>" method="POST">
+                <?php if (validation_errors()) { ?>
+                    <div class="alert alert-danger alert-dismissible" role="alert" data-type="validation-notification">
+                        <?= validation_errors() ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        </button>
+                    </div>
+                <?php } ?>
 
-              <form id="formAuthentication" class="mb-3" action="<?= base_url('autentikasi') ?>" method="post">
+                <div class="col-12 mb-3">
+                    <label for="nama" class="form-label required">Nama Lengkap</label>
+                    <input type="text" class="form-control" name="nama" id="nama" value="" placeholder="Masukkan Nama Lengkap" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label required">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" value="" placeholder="Masukkan Email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="no_telp" class="form-label required">No. HP</label>
+                    <input type="tel" class="form-control" name="no_telp" id="no_telp" value="" placeholder="Masukkan Nomor HP" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan Password" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="password_confirmation" class="form-label">Konfirmasi Password</label>
+                    <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" placeholder="Konfirmasi Password" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="alamat" class="form-label required">Alamat</label>
+                    <textarea name="alamat" id="alamat" class="form-control" rows="5" placeholder="Masukkan Alamat" required></textarea>
+                </div>
+
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Masukkan Email"
-                    autofocus />
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
+                        <label class="form-check-label" for="terms-conditions">
+                            Saya menyetujui
+                            <a href="javascript:void(0);">Syarat & Ketentuan</a>
+                        </label>
+                    </div>
                 </div>
-                <div class="mb-3 form-password-toggle">
-                  <div class="d-flex justify-content-between">
-                    <label class="form-label" for="password">Password</label>
-                    <a href="auth-forgot-password-basic.html">
-                      <small>Forgot Password?</small>
-                    </a>
-                  </div>
-                  <div class="input-group input-group-merge">
-                    <input
-                      type="password"
-                      id="password"
-                      class="form-control"
-                      name="password"
-                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                      aria-describedby="password" />
-                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
-                </div>
+                <button class="btn btn-primary d-grid w-100">Sign up</button>
               </form>
 
               <p class="text-center">
-                <span>Belum mempunyai akun?</span>
-                <a href="<?= base_url('autentikasi/registrasi') ?>">
-                  <span>Daftar disini</span>
+                <span>Sudah mempunyai akun?</span>
+                <a href="<?= base_url('autentikasi') ?>">
+                  <span>Login disini</span>
                 </a>
               </p>
             </div>
           </div>
-          <!-- /Register -->
+          <!-- Register Card -->
         </div>
       </div>
     </div>
 
     <!-- / Content -->
 
+    <div class="buy-now">
+      <a
+        href="https://themeselection.com/item/sneat-bootstrap-html-admin-template/"
+        target="_blank"
+        class="btn btn-danger btn-buy-now"
+        >Upgrade to Pro</a
+      >
+    </div>
+
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="<?= base_url('public/admin/assets/vendor/libs/jquery/jquery.js') ?>"></script>
-    <script src="<?= base_url('public/admin/assets/vendor/libs/popper/popper.js') ?>"></script>
-    <script src="<?= base_url('public/admin/assets/vendor/js/bootstrap.js') ?>"></script>
-    <script src="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') ?>"></script>
-    <script src="<?= base_url('public/admin/assets/vendor/js/menu.js') ?>"></script>
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="<?= base_url('public/admin/assets/vendor/libs/iziToast/js/iziToast.min.js') ?>"></script>
 
     <!-- Main JS -->
-    <script src="<?= base_url('public/admin/assets/js/main.js') ?>"></script>
-    <script>
-        // iziToast Default Configuration
-        iziToast.settings({
-            timeout: 3500,
-            position: "topRight",
-            pauseOnHover: false,
-            transitionIn: "bounceInLeft",
-            transitionOut: "fadeOutRight",
-            transitionInMobile: "bounceInLeft",
-            transitionOutMobile: "fadeOutRight",
-        });
-    </script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <?php if ($this->session->flashdata('success')): ?>
-    <script>
-        $(document).ready(function(){
-            iziToast.success({
-                title: 'Success',
-                message : '<?= $this->session->flashdata('success'); ?>',
-            });
-        })
-    </script>
-    <?php endif ?>
-    
-    <?php if ($this->session->flashdata('error')): ?>
-    <script>
-        $(document).ready(function(){
-            iziToast.error({
-                title: 'Failed',
-                message : '<?= $this->session->flashdata('error'); ?>',
-            });
-        })
-    </script>
-    <?php endif ?>
 
-    <!-- Page JS -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
