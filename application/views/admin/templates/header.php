@@ -13,7 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Fluid - Layouts | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Sistem Informasi Komunitas - <?= $title ?></title>
 
     <meta name="description" content="" />
 
@@ -33,9 +33,11 @@
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/css/core.css') ?>" class="template-customizer-core-css" />
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/css/theme-default.css') ?>" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/css/demo.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/admin/assets/css/pages/page-profile.css') ?>" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/iziToast/css/iziToast.min.css') ?>" />
 
     <!-- Page CSS -->
 
@@ -45,6 +47,18 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="<?= base_url('public/admin/assets/js/config.js') ?>"></script>
   </head>
+
+  <style>
+    label.required::after{
+        content: '*';
+        color: red;
+        margin-left: 5px;
+    }
+
+    .alert[data-type="validation-notification"] p {
+      margin-bottom: 5px;
+    }
+  </style>
 
   <body>
     <!-- Layout wrapper -->
