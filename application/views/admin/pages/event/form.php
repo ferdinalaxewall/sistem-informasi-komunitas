@@ -38,7 +38,7 @@
                     </select>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="kapasitas" class="form-label required">Kapasitasc</label>
+                    <label for="kapasitas" class="form-label required">Kapasitas</label>
                     <input type="number" name="kapasitas" id="kapasitas" class="form-control" value="<?= $item?->kapasitas ?>" placeholder="0" required>
                 </div>
                 <div class="col-12 mb-3">
@@ -47,11 +47,11 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="waktu_mulai" class="form-label required">Waktu Mulai</label>
-                    <input type="date" class="form-control" name="waktu_mulai" id="waktu_mulai" value="<?= date('Y-m-d', strtotime($item?->waktu_mulai)) ?>" placeholder="Masukkan Tanggal Mulai" required>
+                    <input type="date" class="form-control" name="waktu_mulai" id="waktu_mulai" value="<?= date('Y-m-d', strtotime($item?->waktu_mulai ?? date('Y-m-d'))) ?>" placeholder="Masukkan Tanggal Mulai" required>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="waktu_selesai" class="form-label required">Waktu Selesai</label>
-                    <input type="date" class="form-control" name="waktu_selesai" id="waktu_selesai" value="<?= date('Y-m-d', strtotime($item?->waktu_selesai)) ?>" placeholder="Masukkan Tanggal Selesai" required>
+                    <input type="date" class="form-control" name="waktu_selesai" id="waktu_selesai" value="<?= date('Y-m-d', strtotime($item?->waktu_selesai ?? date('Y-m-d'))) ?>" placeholder="Masukkan Tanggal Selesai" required>
                 </div>
                 <div class="col-12 mb-3">
                     <label for="lokasi" class="form-label required">Lokasi/Link Event</label>

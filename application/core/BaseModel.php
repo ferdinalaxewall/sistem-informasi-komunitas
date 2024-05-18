@@ -9,8 +9,9 @@ class BaseModel extends CI_Model
         return $this->db->get($this->table)->result();
     }
 
-    public function find($where = [])
+    public function find($where = [], $limit = null)
     {
+        if (!is_null($limit)) $this->db->limit($limit);
         return $this->db->get_where($this->table, $where);
     }
     
@@ -22,6 +23,11 @@ class BaseModel extends CI_Model
     public function findOne($where = [])
     {
         return $this->find($where)->row();
+    }
+
+    public function findWithLimit($where = [], $limit = null)
+    {
+        return $this->find($where, $limit)->result();
     }
 
     public function findOneById($id)

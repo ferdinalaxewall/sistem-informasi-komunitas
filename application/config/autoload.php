@@ -138,4 +138,5 @@ $autoload['model'] = array(
     'ModelUser' => 'user',
     'ModelForum' => 'forum',
     'ModelEvent' => 'event',
+    'ModelUserJoinEvent' => 'joinEvent',
 );

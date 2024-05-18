@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -33,7 +32,7 @@
     <header class="header-section header-menu">
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container">
-                <nav class="navbar w-100 navbar-expand-lg justify-content-betweenm">
+                <nav class="navbar w-100 navbar-expand-lg justify-content-between">
                     <a href="index.html" class="navbar-brand">
                         <img src="public/landing-page/assets/images/logo.png" class="logo" alt="logo">
                     </a>
@@ -531,6 +530,7 @@
     <main class="main-content">
         <div class="container sidebar-toggler">
             <div class="row">
+                <!-- Sidebar Content -->
                 <div class="col-xxl-3 col-xl-3 col-lg-4 col-6 cus-z2">
                     <div class="d-inline-block d-lg-none">
                         <button class="button profile-active mb-4 mb-lg-0 d-flex align-items-center gap-2">
@@ -640,6 +640,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Sidebar Content -->
+
+                <!-- Main Content -->
                 <div class="col-xxl-6 col-xl-5 col-lg-8 mt-0 mt-lg-10 mt-xl-0 d-flex flex-column gap-7 cus-z">
                     <div class="story-carousel">
                         <div class="single-item">
@@ -1684,6 +1687,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Main Content -->
+
+                <!-- Right Sidebar Content -->
                 <div class="col-xxl-3 col-xl-4 col-lg-4 col-6 mt-5 mt-xl-0">
                     <div class="cus-overflow cus-scrollbar sidebar-head">
                         <div class="d-flex justify-content-end">
@@ -2006,6 +2012,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Right Sidebar Content -->
+                
             </div>
         </div>
     </main>
