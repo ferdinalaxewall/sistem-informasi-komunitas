@@ -45,7 +45,7 @@
                                 <li><img src="<?= base_url('public/landing-page/assets/images/avatar-3.png') ?>" alt="image"></li>
                                 <li><img src="<?= base_url('public/landing-page/assets/images/avatar-4.png') ?>" alt="image"></li>
                             </ul>
-                            <span class="mdtxt d-center"><?= count($joined_event) ?> Orang Bergabung</span>
+                            <span class="mdtxt d-center"><?= count($joined_event) ?> Mengikuti</span>
                         </div>
                         <ul class="d-grid gap-2 my-5">
                             <li class="d-flex align-items-center gap-2">

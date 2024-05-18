@@ -28,7 +28,7 @@ class Event extends CI_Controller
 
     public function detail($event_id)
     {
-        if (!isset($event_id)) redirect(base_url('admin/event'));
+        if (!isset($event_id)) redirect(base_url('event'));
 
         $data = [
             'title' => 'Detail Event',
@@ -53,7 +53,7 @@ class Event extends CI_Controller
 
     public function ikuti($event_id)
     {
-        if (!isset($event_id)) redirect(base_url('admin/event'));
+        if (!isset($event_id)) redirect(base_url('event'));
 
         $this->joinEvent->create([
             'is_verified' => 1,

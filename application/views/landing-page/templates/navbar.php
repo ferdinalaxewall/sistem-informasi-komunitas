@@ -37,6 +37,14 @@
                                 </div>
                             </div>
                             <ul class="pt-3">
+                                <?php if ($user->role == 'admin'): ?>
+                                    <li>
+                                        <a href="<?= base_url('admin/dashboard') ?>" class="mdtxt">
+                                            <i class="material-symbols-outlined mat-icon"> person </i>
+                                            Administrator
+                                        </a>
+                                    </li>
+                                <?php endif ?>
                                 <li>
                                     <a href="<?= base_url('profil') ?>" class="mdtxt">
                                         <i class="material-symbols-outlined mat-icon"> settings </i>

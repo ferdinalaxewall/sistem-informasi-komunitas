@@ -29,4 +29,15 @@ class ModelForum extends BaseModel
             ]
         ];
     }
+
+    public function findOneWithJoinCategory($id)
+    {
+        $this->db->from($this->table);
+        $this->db->join('kategori_forum', 'kategori_forum.id = forum.kategori_forum_id');
+        $this->db->where([
+            'forum.id' => $id
+        ]);
+
+        return $this->db->get()->row();
+    }
 }

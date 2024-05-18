@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'uuid', 'auth');
+$autoload['helper'] = array('url', 'uuid', 'auth', 'debug');
 
 /*
 | -------------------------------------------------------------------
@@ -139,4 +139,6 @@ $autoload['model'] = array(
     'ModelForum' => 'forum',
     'ModelEvent' => 'event',
     'ModelUserJoinEvent' => 'joinEvent',
+    'ModelUserJoinForum' => 'joinForum',
+    'ModelForumDiskusi' => 'forumDiskusi'
 );

@@ -6,11 +6,13 @@ class BaseModel extends CI_Model
 
     public function all()
     {
+        $this->db->order_by('tgl_dibuat', 'DESC');
         return $this->db->get($this->table)->result();
     }
 
     public function find($where = [], $limit = null)
     {
+        $this->db->order_by('tgl_dibuat', 'DESC');
         if (!is_null($limit)) $this->db->limit($limit);
         return $this->db->get_where($this->table, $where);
     }
