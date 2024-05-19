@@ -3,6 +3,7 @@
 class ModelForum extends BaseModel
 {
     protected $table = 'forum';
+    protected $prefix_code = 'FRM';
 
     public function rules()
     {

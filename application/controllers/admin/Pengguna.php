@@ -58,7 +58,7 @@ class Pengguna extends CI_Controller
                 'role' => 'pengguna'
             ];
 
-            $this->user->create($request);
+            $this->user->create($request, true);
             $this->session->set_flashdata('success', 'Pengguna Berhasil Ditambahkan');
             redirect(base_url('admin/pengguna'));
         }

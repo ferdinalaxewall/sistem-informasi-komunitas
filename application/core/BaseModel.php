@@ -3,6 +3,7 @@
 class BaseModel extends CI_Model
 {
     protected $table;
+    protected $prefix_code = 'TDA';
 
     public function all()
     {
@@ -39,9 +40,11 @@ class BaseModel extends CI_Model
         ])->row();
     }
 
-    public function create(array $request)
+    public function create(array $request, bool $with_unique_code = false)
     {
         $request['id'] = generate_uuid();
+        if ($with_unique_code) $request['code'] = $this->generateUniqueCode();
+
         $this->db->insert($this->table, $request);
     }
 
@@ -67,5 +70,23 @@ class BaseModel extends CI_Model
         $this->delete([
             'id' => $id
         ]);
+    }
+
+    public function generateUniqueCode()
+    {
+        $this->db->select("RIGHT({$this->table}.code,5) as code", FALSE);
+        $this->db->order_by("code","DESC");    
+        $this->db->limit(1);    
+
+        $query = $this->db->get("{$this->table}");
+            if ($query->num_rows() <> 0) {      
+                $data = $query->row();
+                $kode = intval(substr($data->code, -3)) + 1; 
+            } else {      
+                $kode = 1;  
+            }
+        $number = str_pad($kode, 3, "0", STR_PAD_LEFT);
+
+        return generate_code($this->prefix_code, $number);
     }
 }

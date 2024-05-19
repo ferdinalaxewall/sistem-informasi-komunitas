@@ -3,6 +3,7 @@
 class ModelUser extends BaseModel
 {
     protected $table = 'users';
+    protected $prefix_code = 'USR';
 
     public function globalRules()
     {
@@ -92,5 +93,11 @@ class ModelUser extends BaseModel
                 'rules' => 'required',
             ],
         ];
+    }
+
+    public function create(array $data, bool $with_unique_code = false)
+    {
+        if ($data['role'] == 'admin') $this->prefix_code = 'ADM';
+        parent::create($data, $with_unique_code);
     }
 }

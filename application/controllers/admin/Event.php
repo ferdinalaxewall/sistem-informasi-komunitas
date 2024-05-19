@@ -72,7 +72,7 @@ class Event extends CI_Controller
                 $request['thumbnail'] = $this->upload->data('file_name');
             }
 
-            $this->event->create($request);
+            $this->event->create($request, true);
             $this->session->set_flashdata('success', 'Event Berhasil Ditambahkan');
             redirect(base_url('admin/event'));
         }

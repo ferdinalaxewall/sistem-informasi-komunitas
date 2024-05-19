@@ -3,6 +3,8 @@
 class ModelEvent extends BaseModel
 {
     protected $table = 'event';
+    protected $prefix_code = 'EVT';
+
     public $tipe = [
         'offline' => 'Offline', 
         'online' => 'Online'

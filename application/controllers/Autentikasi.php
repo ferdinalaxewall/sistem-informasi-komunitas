@@ -84,7 +84,7 @@ class Autentikasi extends CI_Controller
                 'role' => 'pengguna'
             ];
 
-            $this->user->create($request);
+            $this->user->create($request, true);
             $this->session->set_flashdata('success', 'Akun Berhasil Didaftarkan!');
             redirect(base_url('autentikasi'));
         }

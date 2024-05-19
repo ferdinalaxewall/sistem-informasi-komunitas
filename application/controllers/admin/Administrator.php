@@ -58,7 +58,7 @@ class Administrator extends CI_Controller
                 'role' => 'admin'
             ];
 
-            $this->user->create($request);
+            $this->user->create($request, true);
             $this->session->set_flashdata('success', 'Administrator Berhasil Ditambahkan');
             redirect(base_url('admin/administrator'));
         }

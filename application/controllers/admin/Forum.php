@@ -68,7 +68,7 @@ class Forum extends CI_Controller
                 $request['thumbnail'] = $this->upload->data('file_name');
             }
 
-            $this->forum->create($request);
+            $this->forum->create($request, true);
             $this->session->set_flashdata('success', 'Forum Berhasil Ditambahkan');
             redirect(base_url('admin/forum'));
         }
