@@ -3,8 +3,8 @@
     <nav class="navbar navbar-expand-lg p-0">
         <div class="container">
             <nav class="navbar w-100 navbar-expand-lg justify-content-between">
-                <a href="<?= base_url() ?>" class="navbar-brand">
-                    <img src="<?= base_url('public/landing-page/assets/images/logo.png') ?>" class="logo" alt="logo">
+                <a href="<?= base_url() ?>" class="navbar-brand rounded px-3" style=" background-color: #fff;">
+                    <img src="<?= base_url('public/system/img/logo/small-logo-tda.png') ?>" class="logo" alt="logo" style="height: 55px;">
                 </a>
                 <ul class="navbar-nav feed flex-row gap-xl-20 gap-lg-10 gap-sm-7 gap-1 py-4 py-lg-0 m-lg-auto ms-auto ms-aut align-self-center">
                     <li>
