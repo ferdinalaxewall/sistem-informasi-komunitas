@@ -36,4 +36,12 @@ class ModelForum extends BaseModel
 
         return $this->db->get()->row();
     }
+
+    public function countJoinForum()
+    {
+        $data = $this->db->query("SELECT forum.judul, COUNT(user_join_forum.forum_id) as total_join FROM forum LEFT JOIN user_join_forum ON user_join_forum.forum_id = forum.id GROUP BY forum.id, forum.judul")->result();
+        $this->db->reset_query();
+        
+        return $data;
+    }
 }

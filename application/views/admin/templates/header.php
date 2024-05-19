@@ -38,6 +38,7 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/iziToast/css/iziToast.min.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/apex-charts/apex-charts.css') ?>" />
 
     <!-- Page CSS -->
 

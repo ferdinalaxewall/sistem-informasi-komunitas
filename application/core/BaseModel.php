@@ -72,6 +72,12 @@ class BaseModel extends CI_Model
         ]);
     }
 
+    public function count($where = [])
+    {
+        $this->db->where($where);
+        return $this->db->count_all_results($this->table);
+    }
+
     public function generateUniqueCode()
     {
         $this->db->select("RIGHT({$this->table}.code,5) as code", FALSE);

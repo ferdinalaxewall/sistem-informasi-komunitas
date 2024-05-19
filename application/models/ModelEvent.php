@@ -50,4 +50,12 @@ class ModelEvent extends BaseModel
             ]
         ];
     }
+
+    public function countJoinEvent()
+    {
+        $data = $this->db->query("SELECT event.judul, COUNT(user_join_event.event_id) as total_join FROM event LEFT JOIN user_join_event ON user_join_event.event_id = event.id GROUP BY event.id, event.judul")->result();
+        $this->db->reset_query();
+        
+        return $data;
+    }
 }

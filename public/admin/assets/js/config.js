@@ -25,5 +25,9 @@ let config = {
     headingColor: '#566a7f',
     textMuted: '#a1acb8',
     borderColor: '#eceef1'
+  },
+  graph: {
+      borderColor: '#ececec',
+      labelColor: '#001752'
   }
 };
