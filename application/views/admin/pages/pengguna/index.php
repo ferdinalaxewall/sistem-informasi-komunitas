@@ -19,6 +19,7 @@
                         <th>Nama</th>
                         <th>Email</th>
                         <th>No. Telp</th>
+                        <th>Tanggal Bergabung</th>
                         <th class="text-center">Opsi</th>
                     </tr>
                 </thead>
@@ -31,6 +32,7 @@
                         <td><?= $item->nama ?></td>
                         <td><?= $item->email ?></td>
                         <td><?= $item->no_telp ?></td>
+                        <td><?= date('d F Y', strtotime($item->tgl_dibuat)) ?></td>
                         <td>
                             <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
                                 <a href="<?= base_url("admin/pengguna/ubah/{$item->id}") ?>" class="btn btn-info btn-icon btn-sm" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" data-bs-original-title="Ubah">

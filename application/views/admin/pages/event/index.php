@@ -19,6 +19,7 @@
                         <th>Judul</th>
                         <th>Tipe</th>
                         <th>Status Verifikasi</th>
+                        <th>Tanggal Dibuat</th>
                         <th class="text-center">Opsi</th>
                     </tr>
                 </thead>
@@ -38,6 +39,9 @@
                             <?php } else { ?>
                                 <span class="badge bg-danger rounded-pill">Belum Diverifikasi</span>
                             <?php } ?>
+                        </td>
+                        <td>
+                            <?= date('d F Y', strtotime($item->tgl_dibuat)) ?>
                         </td>
                         <td>
                             <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
