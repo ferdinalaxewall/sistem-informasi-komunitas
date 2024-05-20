@@ -15,7 +15,7 @@
                 </caption>
                 <thead>
                     <tr>
-                        <th>No.</th>
+                        <th>Kode</th>
                         <th>Judul</th>
                         <th>Status Publikasi</th>
                         <th>Status Verifikasi</th>
@@ -27,7 +27,7 @@
                     <?php foreach ($items as $index => $item) { ?>
                     <tr>
                         <td>
-                            <?= $index + 1 ?>
+                            <?= $item?->code ?? $index + 1 ?>
                         </td>
                         <td><?= $item->judul ?></td>
                         <td>
