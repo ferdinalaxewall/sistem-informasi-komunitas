@@ -36,6 +36,7 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') ?>" />
+    <link rel="stylesheet" href="<?= base_url('public/admin/assets/vendor/libs/iziToast/css/iziToast.min.css') ?>" />
 
     <!-- Page CSS -->
     <!-- Page -->
@@ -130,27 +131,19 @@
 
     <!-- / Content -->
 
-    <div class="buy-now">
-      <a
-        href="https://themeselection.com/item/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-        >Upgrade to Pro</a
-      >
-    </div>
-
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../assets/vendor/js/bootstrap.js"></script>
-    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="<?= base_url('public/admin/assets/vendor/libs/jquery/jquery.js') ?>"></script>
+    <script src="<?= base_url('public/admin/assets/vendor/libs/popper/popper.js') ?>"></script>
+    <script src="<?= base_url('public/admin/assets/vendor/js/bootstrap.js') ?>"></script>
+    <script src="<?= base_url('public/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') ?>"></script>
+    <script src="<?= base_url('public/admin/assets/vendor/js/menu.js') ?>"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
+    <script src="<?= base_url('public/admin/assets/vendor/libs/iziToast/js/iziToast.min.js') ?>"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
@@ -159,5 +152,40 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        // iziToast Default Configuration
+        iziToast.settings({
+            timeout: 3500,
+            position: "topRight",
+            pauseOnHover: false,
+            transitionIn: "bounceInLeft",
+            transitionOut: "fadeOutRight",
+            transitionInMobile: "bounceInLeft",
+            transitionOutMobile: "fadeOutRight",
+        });
+    </script>
+
+    <!-- Page JS -->
+    <?php if ($this->session->flashdata('success')): ?>
+    <script>
+        $(document).ready(function(){
+            iziToast.success({
+                title: 'Success',
+                message : '<?= $this->session->flashdata('success'); ?>',
+            });
+        })
+    </script>
+    <?php endif ?>
+    
+    <?php if ($this->session->flashdata('error')): ?>
+    <script>
+        $(document).ready(function(){
+            iziToast.error({
+                title: 'Failed',
+                message : '<?= $this->session->flashdata('error'); ?>',
+            });
+        })
+    </script>
+    <?php endif ?>
   </body>
 </html>

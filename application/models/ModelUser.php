@@ -30,21 +30,21 @@ class ModelUser extends BaseModel
     {
         $globalRules = $this->globalRules();
         $globalRules[] = [
-            [
-                'field' => 'email',
-                'label' => 'Email',
-                'rules' => 'trim|required|max_length[100]|valid_email|is_unique[users.email]',
-            ],
-            [
-                'field' => 'password',
-                'label' => 'Password',
-                'rules' => 'required'
-            ],
-            [
-                'field' => 'password_confirmation',
-                'label' => 'Konfirmasi Password',
-                'rules' => 'required|matches[password]',
-            ]
+            'field' => 'email',
+            'label' => 'Email',
+            'rules' => 'trim|required|max_length[100]|valid_email|is_unique[users.email]',
+        ];
+
+        $globalRules[] = [
+            'field' => 'password',
+            'label' => 'Password',
+            'rules' => 'required'
+        ];
+
+        $globalRules[] = [
+            'field' => 'password_confirmation',
+            'label' => 'Konfirmasi Password',
+            'rules' => 'required|matches[password]',
         ];
 
         return $globalRules;
@@ -54,11 +54,9 @@ class ModelUser extends BaseModel
     {
         $globalRules = $this->globalRules();
         $globalRules[] = [
-            [
-                'field' => 'email',
-                'label' => 'Email',
-                'rules' => "trim|required|max_length[100]|valid_email|is_unique[users.email,id,{$id}]",
-            ],
+            'field' => 'email',
+            'label' => 'Email',
+            'rules' => "trim|required|max_length[100]|valid_email|is_unique[users.email,id,{$id}]",
         ];
 
         if (!empty($this->input->post('password'))) {

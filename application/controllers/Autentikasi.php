@@ -73,20 +73,25 @@ class Autentikasi extends CI_Controller
             $this->load->view('admin/pages/auth/register');
         } else {
             $password = $this->input->post('password', true);
-            $encryptedPassword = password_hash($password, PASSWORD_BCRYPT);
-
-            $request = [
-                'nama' => $this->input->post('nama', true),
-                'email' => $this->input->post('email', true),
-                'no_telp' => $this->input->post('no_telp', true),
-                'alamat' => $this->input->post('alamat', true),
-                'password' => $encryptedPassword,
-                'role' => 'pengguna'
-            ];
-
-            $this->user->create($request, true);
-            $this->session->set_flashdata('success', 'Akun Berhasil Didaftarkan!');
-            redirect(base_url('autentikasi'));
+            if ($password == $this->input->post('password_confirmation', true)) {
+                $encryptedPassword = password_hash($password, PASSWORD_BCRYPT);
+    
+                $request = [
+                    'nama' => $this->input->post('nama', true),
+                    'email' => $this->input->post('email', true),
+                    'no_telp' => $this->input->post('no_telp', true),
+                    'alamat' => $this->input->post('alamat', true),
+                    'password' => $encryptedPassword,
+                    'role' => 'pengguna'
+                ];
+    
+                $this->user->create($request, true);
+                $this->session->set_flashdata('success', 'Akun Berhasil Didaftarkan!');
+                redirect(base_url('autentikasi'));
+            } else {
+                $this->session->set_flashdata('error', 'Password yang anda masukkan tidak sesuai!');
+                redirect(base_url('autentikasi/registrasi'));
+            }
         }
     }
 
