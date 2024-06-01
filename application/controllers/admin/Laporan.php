@@ -10,8 +10,6 @@ class Laporan extends CI_Controller
             'user' => $this->user->findOneById($this->session->userdata('id'))
         ];
 
-        // var_dump($data['items']);
-
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/templates/sidebar', $data);
         $this->load->view('admin/templates/topbar', $data);
@@ -42,6 +40,37 @@ class Laporan extends CI_Controller
 
     public function event()
     {
+        $data = [
+            'title' => 'Laporan Event',
+            'items' => $this->event->reportEvent(),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
+        ];
 
+        $this->load->view('admin/templates/header', $data);
+        $this->load->view('admin/templates/sidebar', $data);
+        $this->load->view('admin/templates/topbar', $data);
+        $this->load->view('admin/pages/laporan/event', $data);
+        $this->load->view('admin/templates/footer', $data);
+    }
+
+    public function cetak_laporan_event()
+    {
+        $data = [
+            'title' => 'Laporan Event',
+            'items' => $this->event->reportEvent(),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
+        ];
+
+        $dompdf = new Dompdf\Dompdf();
+        $this->load->view('admin/pdf/laporan-event', $data);
+
+        $paper_size = 'A4';
+        $orientation = "potrait";
+        $html = $this->output->get_output();
+
+        $dompdf->set_paper($paper_size, $orientation);
+        $dompdf->load_html($html);
+        $dompdf->render();
+        $dompdf->stream("laporan-event-{$data['user']->code}.pdf", array('Attachment' => 0));
     }
 }

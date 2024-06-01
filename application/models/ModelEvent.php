@@ -58,4 +58,12 @@ class ModelEvent extends BaseModel
         
         return $data;
     }
+
+    public function reportEvent()
+    {
+        $data = $this->db->query("SELECT event.code,event.judul,COUNT(DISTINCT user_join_event.id) AS total_join,users.nama AS dibuat_oleh,event.tgl_dibuat FROM event LEFT JOIN user_join_event ON event.id=user_join_event.event_id LEFT JOIN users ON event.user_id=users.id GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;")->result();
+        $this->db->reset_query();
+
+        return $data;
+    }
 }
