@@ -44,4 +44,12 @@ class ModelForum extends BaseModel
         
         return $data;
     }
+
+    public function reportForum()
+    {
+        $data = $this->db->query("SELECT forum.code,forum.judul,COUNT(DISTINCT user_join_forum.id)AS total_join,COUNT(DISTINCT forum_diskusi.id)AS total_diskusi,users.nama AS dibuat_oleh,forum.tgl_dibuat FROM forum LEFT JOIN user_join_forum ON forum.id=user_join_forum.forum_id LEFT JOIN forum_diskusi ON forum.id=forum_diskusi.forum_id LEFT JOIN users ON forum.user_id=users.id GROUP BY forum.code,forum.judul,forum.tgl_dibuat,users.nama;")->result();
+        $this->db->reset_query();
+
+        return $data;
+    }
 }

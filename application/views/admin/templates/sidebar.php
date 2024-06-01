@@ -88,6 +88,29 @@
                 <div data-i18n="Event">Event</div>
             </a>
         </li>
+
+        <!-- Event -->
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Laporan</span></li>
+
+        <!-- Laporan Forum -->
+        <li class="menu-item">
+            <a
+            href="<?= base_url('admin/laporan/forum') ?>"
+            class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-report"></i>
+                <div data-i18n="Laporan Forum">Laporan Forum</div>
+            </a>
+        </li>
+
+        <!-- Laporan Event -->
+        <li class="menu-item">
+            <a
+            href="<?= base_url('admin/laporan/event') ?>"
+            class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-report"></i>
+                <div data-i18n="Laporan Event">Laporan Event</div>
+            </a>
+        </li>
     </ul>
 </aside>
 <!-- / Menu -->
