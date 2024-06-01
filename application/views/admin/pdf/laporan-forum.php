@@ -31,14 +31,6 @@
     .text-center {
         text-align: center;
     }
-
-    .bg-primary {
-        background-color: #696cff;
-    }
-
-    .clr-white {
-        color: #fff;
-    }
 </style>
 
 <body>

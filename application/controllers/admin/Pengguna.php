@@ -112,4 +112,27 @@ class Pengguna extends CI_Controller
         $this->session->set_flashdata('success', 'Pengguna Berhasil Dihapus');
         redirect(base_url('admin/pengguna'));
     }
+
+    public function print()
+    {
+        $data = [
+            'title' => 'Laporan Event',
+            'items' => $this->user->findAll([
+                'role' => 'pengguna'
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
+        ];
+
+        $dompdf = new Dompdf\Dompdf();
+        $this->load->view('admin/pdf/data-pengguna', $data);
+
+        $paper_size = 'A4';
+        $orientation = "landscape";
+        $html = $this->output->get_output();
+
+        $dompdf->set_paper($paper_size, $orientation);
+        $dompdf->load_html($html);
+        $dompdf->render();
+        $dompdf->stream("data-pengguna-{$data['user']->code}.pdf", array('Attachment' => 0));
+    }
 }

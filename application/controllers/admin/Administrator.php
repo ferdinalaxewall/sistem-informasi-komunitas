@@ -112,4 +112,27 @@ class Administrator extends CI_Controller
         $this->session->set_flashdata('success', 'Administrator Berhasil Dihapus');
         redirect(base_url('admin/administrator'));
     }
+
+    public function print()
+    {
+        $data = [
+            'title' => 'Laporan Data Administrator',
+            'items' => $this->user->findAll([
+                'role' => 'admin'
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id'))
+        ];
+
+        $dompdf = new Dompdf\Dompdf();
+        $this->load->view('admin/pdf/data-admin', $data);
+
+        $paper_size = 'A4';
+        $orientation = "landscape";
+        $html = $this->output->get_output();
+
+        $dompdf->set_paper($paper_size, $orientation);
+        $dompdf->load_html($html);
+        $dompdf->render();
+        $dompdf->stream("data-admin-{$data['user']->code}.pdf", array('Attachment' => 0));
+    }
 }
