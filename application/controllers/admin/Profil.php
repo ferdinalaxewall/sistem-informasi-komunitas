@@ -34,34 +34,45 @@ class Profil extends CI_Controller
                 'alamat' => $this->input->post('alamat', true),
             ];
 
-            if (!empty($this->input->post('password', true))) {
-                $password = $this->input->post('password', true);
-                $request['password'] = password_hash($password, PASSWORD_BCRYPT);
-            }
+            $existingUserEmail = $this->user->findOne([
+                'email' => $request['email']
+            ]);
 
-            $config['upload_path'] = './public/system/img/profile/';
-            $config['allowed_types'] = 'gif|jpg|png|jpeg';
-            $config['max_size'] = '3000';
-            $config['file_name'] = 'pro' . time();
-
-            $upload_image = $_FILES['image']['name'];
-            
-            $this->load->library('upload');
-            $this->upload->initialize($config);
-            
-            if ($upload_image && $this->upload->do_upload('image')) {
-                if (!empty($data['user']->image)) {
-                    unlink(FCPATH . 'public/system/img/profile/' . $data['user']->image);
-                }
-
-                $request['image'] = $this->upload->data('file_name');
+            if (!is_null($existingUserEmail) && $existingUserEmail->id != $this->session->userdata('id')) {
+                $this->session->set_flashdata('error', 'Email sudah terdaftar, silahkan menggunakan email lainnya!');
+                redirect(base_url('admin/profil'));
             } else {
-                $request['image'] = $data['user']->image;
+
+                if (!empty($this->input->post('password', true))) {
+                    $password = $this->input->post('password', true);
+                    $request['password'] = password_hash($password, PASSWORD_BCRYPT);
+                }
+    
+                $config['upload_path'] = './public/system/img/profile/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['max_size'] = '3000';
+                $config['file_name'] = 'pro' . time();
+    
+                $upload_image = $_FILES['image']['name'];
+                
+                $this->load->library('upload');
+                $this->upload->initialize($config);
+                
+                if ($upload_image && $this->upload->do_upload('image')) {
+                    if (!empty($data['user']->image)) {
+                        unlink(FCPATH . 'public/system/img/profile/' . $data['user']->image);
+                    }
+    
+                    $request['image'] = $this->upload->data('file_name');
+                } else {
+                    $request['image'] = $data['user']->image;
+                }
+    
+                $this->user->updateById($id, $request);
+                $this->session->set_flashdata('success', 'Profil Berhasil Diubah');
+                redirect(base_url('admin/profil'));
             }
 
-            $this->user->updateById($id, $request);
-            $this->session->set_flashdata('success', 'Profil Berhasil Diubah');
-            redirect(base_url('admin/profil'));
         }
     }
 }

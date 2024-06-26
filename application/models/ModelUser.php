@@ -52,11 +52,13 @@ class ModelUser extends BaseModel
 
     public function updateUserRules($id)
     {
+        $id = $this->db->escape_str($id);
+
         $globalRules = $this->globalRules();
         $globalRules[] = [
             'field' => 'email',
             'label' => 'Email',
-            'rules' => "trim|required|max_length[100]|valid_email|is_unique[users.email,id,{$id}]",
+            'rules' => "trim|required|max_length[100]|valid_email",
         ];
 
         if (!empty($this->input->post('password'))) {
