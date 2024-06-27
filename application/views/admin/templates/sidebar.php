@@ -11,7 +11,8 @@
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
         <!-- Apps -->
-        <li class="menu-item">
+
+        <li class="menu-item <?= set_active('dashboard') ?>">
             <a
             href="<?= base_url('admin/dashboard') ?>"
             class="menu-link">
@@ -24,7 +25,7 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Users</span></li>
 
         <!-- Administrator -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('administrator') ?>">
             <a
             href="<?= base_url('admin/administrator') ?>"
             class="menu-link">
@@ -34,7 +35,7 @@
         </li>
 
         <!-- Pengguna -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('pengguna') ?>">
             <a
             href="<?= base_url('admin/pengguna') ?>"
             class="menu-link">
@@ -47,7 +48,7 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Forum Diskusi</span></li>
 
         <!-- Kategori Forum -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('kategori_forum') ?>">
             <a
             href="<?= base_url('admin/kategori_forum') ?>"
             class="menu-link">
@@ -57,7 +58,7 @@
         </li>
 
         <!-- Forum -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('forum') ?>">
             <a
             href="<?= base_url('admin/forum') ?>"
             class="menu-link">
@@ -70,7 +71,7 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Event</span></li>
 
         <!-- Kategori Event -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('kategori_event') ?>">
             <a
             href="<?= base_url('admin/kategori_event') ?>"
             class="menu-link">
@@ -80,7 +81,7 @@
         </li>
 
         <!-- Event -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('event') ?>">
             <a
             href="<?= base_url('admin/event') ?>"
             class="menu-link">
@@ -93,7 +94,7 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Laporan</span></li>
 
         <!-- Laporan Forum -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('forum', 3) ?>">
             <a
             href="<?= base_url('admin/laporan/forum') ?>"
             class="menu-link">
@@ -103,7 +104,7 @@
         </li>
 
         <!-- Laporan Event -->
-        <li class="menu-item">
+        <li class="menu-item <?= set_active('event', 3) ?>">
             <a
             href="<?= base_url('admin/laporan/event') ?>"
             class="menu-link">
