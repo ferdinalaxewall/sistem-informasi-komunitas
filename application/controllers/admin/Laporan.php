@@ -2,12 +2,26 @@
 
 class Laporan extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        cek_login();
+        cek_admin();
+    }
+
     public function forum()
     {
         $data = [
             'title' => 'Laporan Forum',
-            'items' => $this->forum->reportForum(),
-            'user' => $this->user->findOneById($this->session->userdata('id'))
+            'items' => $this->forum->reportForum([
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id')),
+            'filter' => [
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]
         ];
 
         $this->load->view('admin/templates/header', $data);
@@ -21,8 +35,15 @@ class Laporan extends CI_Controller
     {
         $data = [
             'title' => 'Laporan Forum',
-            'items' => $this->forum->reportForum(),
-            'user' => $this->user->findOneById($this->session->userdata('id'))
+            'items' => $this->forum->reportForum([
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id')),
+            'filter' => [
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]
         ];
 
         $dompdf = new Dompdf\Dompdf();
