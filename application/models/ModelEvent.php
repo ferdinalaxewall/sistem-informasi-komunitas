@@ -59,9 +59,34 @@ class ModelEvent extends BaseModel
         return $data;
     }
 
-    public function reportEvent()
+    public function reportEvent(array $filters = [])
     {
-        $data = $this->db->query("SELECT event.code,event.judul,COUNT(DISTINCT user_join_event.id) AS total_join,users.nama AS dibuat_oleh,event.tgl_dibuat FROM event LEFT JOIN user_join_event ON event.id=user_join_event.event_id LEFT JOIN users ON event.user_id=users.id GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;")->result();
+        if (!empty($filters['start_date']) && !empty($filters['end_date'])) {
+            $sqlQuery = "SELECT event.code, event.judul, COUNT(DISTINCT user_join_event.id) AS total_join, users.nama AS dibuat_oleh, event.tgl_dibuat FROM event 
+            LEFT JOIN user_join_event ON event.id=user_join_event.event_id 
+            LEFT JOIN users ON event.user_id=users.id 
+            WHERE DATE(event.tgl_dibuat) >= '{$filters['start_date']}' AND DATE(event.tgl_dibuat) <= '{$filters['end_date']}'
+            GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;";    
+        } elseif (!empty($filters['start_date'])) {
+            $sqlQuery = "SELECT event.code, event.judul, COUNT(DISTINCT user_join_event.id) AS total_join, users.nama AS dibuat_oleh, event.tgl_dibuat FROM event 
+            LEFT JOIN user_join_event ON event.id=user_join_event.event_id 
+            LEFT JOIN users ON event.user_id=users.id 
+            WHERE DATE(event.tgl_dibuat) >= '{$filters['start_date']}'
+            GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;";    
+        } elseif (!empty($filters['end_date'])) {
+            $sqlQuery = "SELECT event.code, event.judul, COUNT(DISTINCT user_join_event.id) AS total_join, users.nama AS dibuat_oleh, event.tgl_dibuat FROM event 
+            LEFT JOIN user_join_event ON event.id=user_join_event.event_id 
+            LEFT JOIN users ON event.user_id=users.id 
+            WHERE DATE(event.tgl_dibuat) <= '{$filters['end_date']}'
+            GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;";    
+        } else {
+            $sqlQuery = "SELECT event.code, event.judul, COUNT(DISTINCT user_join_event.id) AS total_join, users.nama AS dibuat_oleh, event.tgl_dibuat FROM event 
+            LEFT JOIN user_join_event ON event.id=user_join_event.event_id 
+            LEFT JOIN users ON event.user_id=users.id 
+            GROUP BY event.code,event.judul,event.tgl_dibuat,users.nama;";    
+        }
+
+        $data = $this->db->query($sqlQuery)->result();
         $this->db->reset_query();
 
         return $data;

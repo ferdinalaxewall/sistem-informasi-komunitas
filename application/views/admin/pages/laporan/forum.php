@@ -31,7 +31,6 @@
                 <a href="<?= base_url('admin/laporan/cetak_laporan_forum') . "?start_date={$filter['start_date']}&end_date={$filter['end_date']}" ?>" class="btn btn-icon btn-info" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" data-bs-original-title="Cetak Laporan Forum" target="_blank">
                     <i class="bx bx-printer"></i>
                 </a>
-                <!-- Enable Backdrop -->
                 <button class="btn btn-primary btn-icon d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBackdrop" aria-controls="offcanvasBackdrop" data-bs-toggle="tooltip" data-bs-offset="0,4" data-bs-placement="top" data-bs-html="true" data-bs-original-title="Filter Laporan Forum" >
                     <i class="bx bx-search-alt"></i>
                 </button>

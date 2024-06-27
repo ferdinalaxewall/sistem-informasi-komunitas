@@ -63,8 +63,15 @@ class Laporan extends CI_Controller
     {
         $data = [
             'title' => 'Laporan Event',
-            'items' => $this->event->reportEvent(),
-            'user' => $this->user->findOneById($this->session->userdata('id'))
+            'items' => $this->event->reportEvent([
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id')),
+            'filter' => [
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]
         ];
 
         $this->load->view('admin/templates/header', $data);
@@ -78,8 +85,15 @@ class Laporan extends CI_Controller
     {
         $data = [
             'title' => 'Laporan Event',
-            'items' => $this->event->reportEvent(),
-            'user' => $this->user->findOneById($this->session->userdata('id'))
+            'items' => $this->event->reportEvent([
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]),
+            'user' => $this->user->findOneById($this->session->userdata('id')),
+            'filter' => [
+                'start_date' => $this->input->get('start_date'),
+                'end_date' => $this->input->get('end_date'),
+            ]
         ];
 
         $dompdf = new Dompdf\Dompdf();
